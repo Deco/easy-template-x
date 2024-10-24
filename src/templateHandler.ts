@@ -91,9 +91,10 @@ export class TemplateHandler {
             currentPart: null
         };
 
-        const contentParts = await docx.getContentParts();
-        for (const part of contentParts) {
-
+        // const contentParts = await docx.getContentParts();
+        // for (const part of contentParts) {
+        const wtf = await docx.justGetMeTheStuff();
+        for (const part of wtf) {
             context.currentPart = part;
 
             // extensions - before compilation

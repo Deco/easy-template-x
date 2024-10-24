@@ -35,5 +35,8 @@
         "noUnusedParameters": false,
         "skipLibCheck": true,
         "strictNullChecks": false
-    }
+    },
+    "include": [
+        "./src/**/*.*"
+    ]
 }

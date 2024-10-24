@@ -1,7 +1,7 @@
 import { MalformedFileError } from '../errors';
 import { Constructor, IMap } from '../types';
 import { Binary, last } from '../utils';
-import { XmlGeneralNode, XmlNodeType, XmlParser } from '../xml';
+import {XmlGeneralNode, XmlNode, XmlNodeType, XmlParser} from '../xml';
 import { Zip } from '../zip';
 import { ContentPartType } from './contentPartType';
 import { ContentTypesFile } from './contentTypesFile';
@@ -78,6 +78,48 @@ export class Docx {
             default:
                 return await this.getHeaderOrFooter(type);
         }
+    }
+
+    public async justGetMeTheStuff(): Promise<XmlPart[]> {
+        const out = [this.mainDocument];
+
+        const handleSection = async (sectPr: XmlNode) => {
+            // find the header or footer references
+            for (const sectPrChild of sectPr.childNodes) {
+                if (sectPrChild.nodeName == 'w:footerReference' || sectPr.nodeName == 'w:headerReference') {
+                    const relId = (sectPrChild as XmlGeneralNode)?.attributes?.['r:id'];
+                    if (!relId)
+                        continue;
+
+                    // return the XmlPart
+                    const rels = await this.mainDocument.rels.list();
+                    const relTarget = rels.find(r => r.id === relId).target;
+                    if (!this._parts[relTarget]) {
+                        const part = new XmlPart("word/" + relTarget, this.zip, this.xmlParser);
+                        this._parts[relTarget] = part;
+                    }
+                    out.push(this._parts[relTarget]);
+                }
+            }
+        };
+
+        const docRoot = await this.mainDocument.xmlRoot();
+        const body = docRoot.childNodes[0];
+        for (const bodyChild of body.childNodes) {
+            if (bodyChild.nodeName == 'w:sectPr') {
+                await handleSection(bodyChild);
+            } else if (bodyChild.nodeName == 'w:p') {
+                const pPr = XmlNode.findChildByName(bodyChild, 'w:pPr');
+                if (pPr) {
+                    const sectPr = XmlNode.findChildByName(pPr, 'w:sectPr');
+                    if (sectPr) {
+                        await handleSection(sectPr);
+                    }
+                }
+            }
+        }
+
+        return out;
     }
 
     /**
