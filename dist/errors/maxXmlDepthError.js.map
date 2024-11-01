@@ -1,0 +1,1 @@
+{"version":3,"file":"maxXmlDepthError.js","sourceRoot":"","sources":["../../src/errors/maxXmlDepthError.ts"],"names":[],"mappings":"AAAA,MAAM,OAAO,gBAAiB,SAAQ,KAAK;IAEvB,QAAQ,CAAS;IAEjC,YAAY,QAAgB;QACxB,KAAK,CAAC,yCAAyC,QAAQ,IAAI,CAAC,CAAC;QAE7D,IAAI,CAAC,QAAQ,GAAG,QAAQ,CAAC;IAC7B,CAAC;CACJ"}

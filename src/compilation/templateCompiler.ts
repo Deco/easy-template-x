@@ -1,13 +1,13 @@
-import { UnclosedTagError, UnknownContentTypeError, UnopenedTagError } from '../errors';
-import { PluginContent, TemplatePlugin } from '../plugins';
-import { IMap } from '../types';
-import { isPromiseLike, stringValue, toDictionary } from '../utils';
-import { XmlNode } from '../xml';
-import { DelimiterSearcher } from './delimiterSearcher';
-import { ScopeData } from './scopeData';
-import { Tag, TagDisposition } from './tag';
-import { TagParser } from './tagParser';
-import { TemplateContext } from './templateContext';
+import { UnclosedTagError, UnknownContentTypeError, UnopenedTagError } from '../errors/index.js';
+import { PluginContent, TemplatePlugin } from '../plugins/index.js';
+import { IMap } from '../types.js';
+import { isPromiseLike, stringValue, toDictionary } from '../utils/index.js';
+import { XmlNode } from '../xml/index.js';
+import { DelimiterSearcher } from './delimiterSearcher.js';
+import { ScopeData } from './scopeData.js';
+import { Tag, TagDisposition } from './tag.js';
+import { TagParser } from './tagParser.js';
+import { TemplateContext } from './templateContext.js';
 
 export interface TemplateCompilerOptions {
     defaultContentType: string;

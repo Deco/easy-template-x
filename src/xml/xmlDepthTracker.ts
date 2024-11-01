@@ -1,7 +1,7 @@
-import { MaxXmlDepthError } from '../errors';
+import { MaxXmlDepthError } from '../errors/index.js';
 
 export class XmlDepthTracker {
-    
+
     private depth = 0;
 
     constructor(private readonly maxDepth: number) { }

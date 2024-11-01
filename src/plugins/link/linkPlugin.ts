@@ -1,8 +1,8 @@
-import { ScopeData, Tag, TemplateContext } from '../../compilation';
-import { DocxParser } from '../../office';
-import { XmlNode } from '../../xml';
-import { TemplatePlugin } from '../templatePlugin';
-import { LinkContent } from './linkContent';
+import { ScopeData, Tag, TemplateContext } from '../../compilation/index.js';
+import { DocxParser } from '../../office/index.js';
+import { XmlNode } from '../../xml/index.js';
+import { TemplatePlugin } from '../templatePlugin.js';
+import { LinkContent } from './linkContent.js';
 
 export class LinkPlugin extends TemplatePlugin {
 

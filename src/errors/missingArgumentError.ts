@@ -1,4 +1,4 @@
-import { ArgumentError } from './argumentError';
+import { ArgumentError } from './argumentError.js';
 
 export class MissingArgumentError extends ArgumentError {
 

@@ -1,6 +1,6 @@
-import { MissingArgumentError } from '../errors';
-import { IMap } from '../types';
-import { last } from '../utils';
+import { MissingArgumentError } from '../errors/index.js';
+import { IMap } from '../types.js';
+import { last } from '../utils/index.js';
 
 export enum XmlNodeType {
     Text = "Text",

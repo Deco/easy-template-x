@@ -1,0 +1,1 @@
+{"version":3,"file":"missingStartDelimiterError.js","sourceRoot":"","sources":["../../src/errors/missingStartDelimiterError.ts"],"names":[],"mappings":"AAAA,MAAM,OAAO,0BAA2B,SAAQ,KAAK;IAEjC,kBAAkB,CAAS;IAE3C,YAAY,kBAA0B;QAClC,KAAK,CAAC,mCAAmC,kBAAkB,IAAI,CAAC,CAAC;QAEjE,IAAI,CAAC,kBAAkB,GAAG,kBAAkB,CAAC;IACjD,CAAC;CACJ"}

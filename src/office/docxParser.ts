@@ -1,6 +1,6 @@
-import { XmlGeneralNode, XmlNode, XmlParser, XmlTextNode } from '../xml';
-import { Zip } from '../zip';
-import { Docx } from './docx';
+import { XmlGeneralNode, XmlNode, XmlParser, XmlTextNode } from '../xml/index.js';
+import { Zip } from '../zip/index.js';
+import { Docx } from './docx.js';
 
 export class DocxParser {
 

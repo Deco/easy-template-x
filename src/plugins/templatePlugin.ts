@@ -1,6 +1,6 @@
-import { ScopeData, Tag, TemplateCompiler, TemplateContext } from '../compilation';
-import { DocxParser } from '../office';
-import { XmlParser } from '../xml';
+import { ScopeData, Tag, TemplateCompiler, TemplateContext } from '../compilation/index.js';
+import { DocxParser } from '../office/index.js';
+import { XmlParser } from '../xml/index.js';
 
 export interface PluginUtilities {
     compiler: TemplateCompiler;

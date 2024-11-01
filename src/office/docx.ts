@@ -1,13 +1,13 @@
-import { MalformedFileError } from '../errors';
-import { Constructor, IMap } from '../types';
-import { Binary, last } from '../utils';
-import {XmlGeneralNode, XmlNode, XmlNodeType, XmlParser} from '../xml';
-import { Zip } from '../zip';
-import { ContentPartType } from './contentPartType';
-import { ContentTypesFile } from './contentTypesFile';
-import { MediaFiles } from './mediaFiles';
-import { Rels } from './rels';
-import { XmlPart } from './xmlPart';
+import { MalformedFileError } from '../errors/index.js';
+import { Constructor, IMap } from '../types.js';
+import { Binary, last } from '../utils/index.js';
+import {XmlGeneralNode, XmlNode, XmlNodeType, XmlParser} from '../xml/index.js';
+import { Zip } from '../zip/index.js';
+import { ContentPartType } from './contentPartType.js';
+import { ContentTypesFile } from './contentTypesFile.js';
+import { MediaFiles } from './mediaFiles.js';
+import { Rels } from './rels.js';
+import { XmlPart } from './xmlPart.js';
 
 /**
  * Represents a single docx file.

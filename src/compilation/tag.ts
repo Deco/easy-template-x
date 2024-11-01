@@ -1,5 +1,5 @@
-import { IMap } from '../types';
-import { XmlTextNode } from '../xml';
+import { IMap } from '../types.js';
+import { XmlTextNode } from '../xml/index.js';
 
 export enum TagDisposition {
     Open = "Open",

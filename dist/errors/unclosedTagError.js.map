@@ -1,0 +1,1 @@
+{"version":3,"file":"unclosedTagError.js","sourceRoot":"","sources":["../../src/errors/unclosedTagError.ts"],"names":[],"mappings":"AAAA,MAAM,OAAO,gBAAiB,SAAQ,KAAK;IAEvB,OAAO,CAAS;IAEhC,YAAY,OAAe;QACvB,KAAK,CAAC,QAAQ,OAAO,oBAAoB,CAAC,CAAC;QAE3C,IAAI,CAAC,OAAO,GAAG,OAAO,CAAC;IAC3B,CAAC;CACJ"}

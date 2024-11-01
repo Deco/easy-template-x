@@ -1,8 +1,0 @@
-{
-  "name": "easy-dist-verify-cjs",
-  "version": "0.0.0",
-  "main": "main.js",
-  "dependencies": {
-    "easy-template-x": "file:../.."
-  }
-}

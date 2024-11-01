@@ -1,0 +1,1 @@
+{"version":3,"file":"unsupportedFileTypeError.js","sourceRoot":"","sources":["../../src/errors/unsupportedFileTypeError.ts"],"names":[],"mappings":"AAAA,MAAM,OAAO,wBAAyB,SAAQ,KAAK;IAE/B,QAAQ,CAAS;IAEjC,YAAY,QAAgB;QACxB,KAAK,CAAC,aAAa,QAAQ,qBAAqB,CAAC,CAAC;QAElD,IAAI,CAAC,QAAQ,GAAG,QAAQ,CAAC;IAC7B,CAAC;CACJ"}

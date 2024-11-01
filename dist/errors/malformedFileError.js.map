@@ -1,0 +1,1 @@
+{"version":3,"file":"malformedFileError.js","sourceRoot":"","sources":["../../src/errors/malformedFileError.ts"],"names":[],"mappings":"AAAA,MAAM,OAAO,kBAAmB,SAAQ,KAAK;IAEzB,gBAAgB,CAAS;IAEzC,YAAY,gBAAwB;QAChC,KAAK,CAAC,0DAA0D,gBAAgB,QAAQ,CAAC,CAAC;QAE1F,IAAI,CAAC,gBAAgB,GAAG,gBAAgB,CAAC;IAC7C,CAAC;CACJ"}

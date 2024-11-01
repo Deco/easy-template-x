@@ -1,9 +1,9 @@
-import { PathPart, ScopeData, Tag, TemplateContext } from '../../compilation';
-import { TemplateData } from '../../templateData';
-import { last } from '../../utils';
-import { XmlNode } from '../../xml';
-import { PluginUtilities, TemplatePlugin } from '../templatePlugin';
-import { ILoopStrategy, LoopListStrategy, LoopParagraphStrategy, LoopTableStrategy } from './strategy';
+import { PathPart, ScopeData, Tag, TemplateContext } from '../../compilation/index.js';
+import { TemplateData } from '../../templateData.js';
+import { last } from '../../utils/index.js';
+import { XmlNode } from '../../xml/index.js';
+import { PluginUtilities, TemplatePlugin } from '../templatePlugin.js';
+import { ILoopStrategy, LoopListStrategy, LoopParagraphStrategy, LoopTableStrategy } from './strategy/index.js';
 
 export const LOOP_CONTENT_TYPE = 'loop';
 

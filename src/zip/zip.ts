@@ -1,8 +1,8 @@
 import JSZip from 'jszip';
-import { Constructor } from '../types';
-import { Binary } from '../utils';
-import { JsZipHelper } from './jsZipHelper';
-import { ZipObject } from './zipObject';
+import { Constructor } from '../types.js';
+import { Binary } from '../utils/index.js';
+import { JsZipHelper } from './jsZipHelper.js';
+import { ZipObject } from './zipObject.js';
 
 export class Zip {
 

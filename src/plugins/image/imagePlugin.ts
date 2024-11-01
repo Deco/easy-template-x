@@ -1,9 +1,9 @@
-import { ScopeData, Tag, TemplateContext } from '../../compilation';
-import { ArgumentError } from '../../errors';
-import { MimeTypeHelper } from '../../mimeType';
-import { XmlGeneralNode, XmlNode } from '../../xml';
-import { TemplatePlugin } from '../templatePlugin';
-import { ImageContent } from './imageContent';
+import { ScopeData, Tag, TemplateContext } from '../../compilation/index.js';
+import { ArgumentError } from '../../errors/index.js';
+import { MimeTypeHelper } from '../../mimeType.js';
+import { XmlGeneralNode, XmlNode } from '../../xml/index.js';
+import { TemplatePlugin } from '../templatePlugin.js';
+import { ImageContent } from './imageContent.js';
 
 /**
  * Apparently it is not that important for the ID to be unique...

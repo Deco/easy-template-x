@@ -1,10 +1,10 @@
 import * as JSON5 from 'json5';
-import { Delimiters } from '../delimiters';
-import { MissingArgumentError, MissingCloseDelimiterError, MissingStartDelimiterError, TagOptionsParseError } from '../errors';
-import { DocxParser } from '../office';
-import { normalizeDoubleQuotes, Regex } from '../utils';
-import { DelimiterMark } from './delimiterMark';
-import { Tag, TagDisposition } from './tag';
+import { Delimiters } from '../delimiters.js';
+import { MissingArgumentError, MissingCloseDelimiterError, MissingStartDelimiterError, TagOptionsParseError } from '../errors/index.js';
+import { DocxParser } from '../office/index.js';
+import { normalizeDoubleQuotes, Regex } from '../utils/index.js';
+import { DelimiterMark } from './delimiterMark.js';
+import { Tag, TagDisposition } from './tag.js';
 
 export class TagParser {
 

@@ -1,8 +1,8 @@
-import { Tag } from '../../../compilation';
-import { XmlNode } from '../../../xml';
-import { PluginUtilities } from '../../templatePlugin';
-import { LoopOver, LoopTagOptions } from '../loopTagOptions';
-import { ILoopStrategy, SplitBeforeResult } from './iLoopStrategy';
+import { Tag } from '../../../compilation/index.js';
+import { XmlNode } from '../../../xml/index.js';
+import { PluginUtilities } from '../../templatePlugin.js';
+import { LoopOver, LoopTagOptions } from '../loopTagOptions.js';
+import { ILoopStrategy, SplitBeforeResult } from './iLoopStrategy.js';
 
 export class LoopTableStrategy implements ILoopStrategy {
 

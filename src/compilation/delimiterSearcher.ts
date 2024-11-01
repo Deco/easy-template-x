@@ -1,8 +1,8 @@
-import { MissingArgumentError } from '../errors';
-import { DocxParser } from '../office';
-import { first, last } from '../utils';
-import { XmlDepthTracker, XmlNode, XmlTextNode } from '../xml';
-import { DelimiterMark } from './delimiterMark';
+import { MissingArgumentError } from '../errors/index.js';
+import { DocxParser } from '../office/index.js';
+import { first, last } from '../utils/index.js';
+import { XmlDepthTracker, XmlNode, XmlTextNode } from '../xml/index.js';
+import { DelimiterMark } from './delimiterMark.js';
 
 class MatchState {
 

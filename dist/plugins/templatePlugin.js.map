@@ -1,0 +1,1 @@
+{"version":3,"file":"templatePlugin.js","sourceRoot":"","sources":["../../src/plugins/templatePlugin.ts"],"names":[],"mappings":"AAUA,MAAM,OAAgB,cAAc;IAOtB,SAAS,CAAkB;IAK9B,YAAY,CAAC,SAA0B;QAC1C,IAAI,CAAC,SAAS,GAAG,SAAS,CAAC;IAC/B,CAAC;IAMM,qBAAqB,CAAC,GAAQ,EAAE,IAAe,EAAE,OAAwB;IAEhF,CAAC;IAUM,wBAAwB,CAAC,IAAW,EAAE,IAAe,EAAE,OAAwB;IAEtF,CAAC;CACJ"}

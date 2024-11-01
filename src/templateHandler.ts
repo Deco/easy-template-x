@@ -1,14 +1,14 @@
-import { DelimiterSearcher, ScopeData, Tag, TagParser, TemplateCompiler, TemplateContext } from './compilation';
-import { Delimiters } from './delimiters';
-import { MalformedFileError } from './errors';
-import { TemplateExtension } from './extensions';
-import { ContentPartType, Docx, DocxParser } from './office';
-import { TemplateData } from './templateData';
-import { TemplateHandlerOptions } from './templateHandlerOptions';
-import { Constructor } from './types';
-import { Binary } from './utils';
-import { XmlNode, XmlParser } from './xml';
-import { Zip } from './zip';
+import { DelimiterSearcher, ScopeData, Tag, TagParser, TemplateCompiler, TemplateContext } from './compilation/index.js';
+import { Delimiters } from './delimiters.js';
+import { MalformedFileError } from './errors/index.js';
+import { TemplateExtension } from './extensions/index.js';
+import { ContentPartType, Docx, DocxParser } from './office/index.js';
+import { TemplateData } from './templateData.js';
+import { TemplateHandlerOptions } from './templateHandlerOptions.js';
+import { Constructor } from './types.js';
+import { Binary } from './utils/index.js';
+import { XmlNode, XmlParser } from './xml/index.js';
+import { Zip } from './zip/index.js';
 
 export class TemplateHandler {
 
